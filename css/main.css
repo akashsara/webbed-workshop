@@ -1,0 +1,15 @@
+.visible-mobile {
+	display: none !important;
+}
+.not-visible-mobile {
+	display: inline !important;
+}
+
+@media screen and (max-width: 600px){
+	.visible-mobile {
+		display: inline !important;
+	}
+	.not-visible-mobile {
+		display: none !important;
+	}
+}
