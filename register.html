@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="author" content="Akash Saravanan">
+	<title>Webbed - The Web Workshop</title>
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<!-- Custom style -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- firebase -->
+	<script src="scripts/login.js" charset="utf-8"></script>
+</head>
+<body>
+	<div id="signup" class="container">
+		<div class="row">
+			<form id="regform" class="col s12 xl8 offset-xl2">
+				<h1 class="center-align">Webbed - Registration</h1>
+				<div class="row">
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="full_name" name="full_name" type="text" class="validate" data-length="20" pattern="[a-zA-Z .]*" title="Names usually consist of just alphabets and spaces." required>
+							<label for="full_name">Name</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="college" name="college" type="text" class="validate" data-length="50" pattern="[a-zA-Z,. ]*" title="Names generally have only alphabets and spaces" required>
+							<label for="college">College</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<select id="laptop" name="option" required>
+								<option value="" disabled selected>Do you need a PC provided?</option>
+								<option value="no">No, I'll bring a laptop.</option>
+								<option value="yes">Yes, I need a PC.</option>
+							</select>
+							<label>Laptop/PC?</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<select id="year" name="option" required>
+								<option value="" disabled selected>Year</option>
+								<option value="1">I</option>
+								<option value="2">II</option>
+							</select>
+							<label>Year</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<input id="email" name="email" type="email" class="validate" data-length="35" required>
+							<label for="email">Email</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<input id="phone" name="phone"type="tel" class="validate" minlength="10" pattern="[0-9]{10}" data-length="10" maxlength="10" title="Should be a mobile number." required>
+							<label for="phone">Phone Number</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<button type="submit" class="waves-effect waves-light btn blue modal-trigger">
+							<i class="material-icons right">done</i>Register!
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- Compiled and minified JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="scripts/scripts.js"></script>
+	<!--
+	================================================== -->
+</body>
+</html>
