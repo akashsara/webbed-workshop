@@ -16,5 +16,5 @@ function writeto(){
   //   username: x.elements[0].value
   // });
 
-    var r=confirm("You have successfully registered as team :\n" + x.elements[0].value);
+    var r=confirm("You have successfully registered as " + x.elements[0].value);
 }
